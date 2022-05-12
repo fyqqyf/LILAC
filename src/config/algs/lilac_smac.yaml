@@ -1,0 +1,43 @@
+# --- LILAC specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50 
+
+runner: "parallel" 
+batch_size_run: 16
+
+buffer_size: 5000 
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "lilac_learner"
+double_q: True
+mixer: "qmix"
+mixing_embed_dim: 32
+
+# for latent model
+name: "lilac_smac_parallel"
+agent: "GMMrole"
+mac: "lilac_mac"
+
+latent_dim: 3 # mu, sigma, 3
+
+pi_floor: 0.001
+NN_HIDDEN_SIZE: 16 # 16
+dis_weight: 0.05
+mi_weight: 0.01
+
+role_num: 3 # role
+
+use_tensorboard: True
+save_model: True
+use_cuda: True
+save_replay: False
+
+device_num: 2
