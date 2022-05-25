@@ -8,7 +8,7 @@ ENV CUDA_LIBRARY_PATH /usr/local/cuda/lib64
 
 # Ubuntu Packages
 RUN apt-get update -y && apt-get install software-properties-common -y && \
-    add-apt-repository -y multiverse && apt-get update -y && apt-get upgrade -y && \
+    add-apt-repository -y multiverse && apt-get update -y && apt-get upgrade -y  --allow-unauthenticated && \
     apt-get install -y apt-utils nano vim man build-essential wget sudo && \
     rm -rf /var/lib/apt/lists/*
 

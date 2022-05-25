@@ -144,7 +144,7 @@ class LilacLearner(QLearner):
         start_time = time.time()  
         loss.backward()
         end_time = time.time()
-        print("反向传播耗时: {:.2f}秒".format(end_time - start_time)) 
+        print("time spent: {:.2f} seconds".format(end_time - start_time)) 
         
         grad_norm = th.nn.utils.clip_grad_norm_(
             self.params, self.args.grad_norm_clip)  # max_norm

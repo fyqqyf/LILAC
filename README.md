@@ -28,12 +28,11 @@ The requirements.txt file can be used to install the necessary packages into a v
 ## Run an experiment 
 
 ```shell
-python3 src/main.py 
---config=lilac_smac
---env-config=sc2
-with
-env_args.map_name=MMM2
-t_max=20050000
+python3 src/main.py  --config=lilac_smac --env-config=sc2 with env_args.map_name=MMM2 t_max=20050000
+```
+To run experiments using the Docker container:
+```shell
+bash run.sh ${GPU} python3 src/main.py  --config=lilac_smac --env-config=sc2 with env_args.map_name=MMM2 t_max=20050000
 ```
 
 The config files act as defaults for an algorithm or environment. 
