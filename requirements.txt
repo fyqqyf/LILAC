@@ -8,7 +8,7 @@ backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifact
 blinker==1.4
 brotlipy==0.7.0
 cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1633010882559/work
-certifi==2021.10.8
+certifi==2022.12.7
 cffi @ file:///tmp/build/80754af9/cffi_1625814693446/work
 chardet @ file:///home/conda/feedstock_root/build_artifacts/chardet_1635814832679/work
 charset-normalizer==2.0.7
